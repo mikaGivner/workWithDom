@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap");
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, #ededed 40%, #9f8772 70%);
+        font-family: "Quicksand";
+        color: #ededed;
+      }
+      .main {
+        width: 50rem;
+        height: 40rem;
+        background: #000;
+        opacity: 0.3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        position: relative;
+      }
+      .modal {
+        position: absolute;
+        top: 30rem;
+        width: 50rem;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: violet;
+        color: red;
+        /* padding-top: 2rem; */
+      }
+      h1 {
+        font-size: 10rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="rLetter">?</h1>
+      <p class="result"></p>
+      <p class="again"></p>
+      <p>keys guessed:</p>
+      <div class="wordWarehouse"></div>
+      <div class="modal">
+        <input type="button" value="would you like play again?" id="btn" />
+      </div>
+    </div>
+  </body>
+  <script src="./22.3.js"></script>
+</html>
